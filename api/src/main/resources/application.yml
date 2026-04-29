@@ -3,6 +3,7 @@ spring.application.name: entry-level-java-challenge
 server:
   error:
     include-message: always
+    include-binding-errors: always
 
 api:
   security:

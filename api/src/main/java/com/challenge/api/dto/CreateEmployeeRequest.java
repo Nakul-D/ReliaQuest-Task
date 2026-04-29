@@ -1,5 +1,6 @@
 package com.challenge.api.dto;
 
+import jakarta.validation.constraints.AssertTrue;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import java.time.Instant;
@@ -27,4 +28,12 @@ public class CreateEmployeeRequest {
     @NotNull private Instant contractHireDate;
 
     private Instant contractTerminationDate;
+
+    @AssertTrue(message = "contractTerminationDate must be after contractHireDate")
+    public boolean isContractTerminationDateValid() {
+        if (contractTerminationDate == null) {
+            return true;
+        }
+        return contractTerminationDate.isAfter(contractHireDate);
+    }
 }
