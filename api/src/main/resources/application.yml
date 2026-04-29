@@ -7,4 +7,4 @@ server:
 
 api:
   security:
-    key: some-super-secret-key
+    key: some-super-secret-key # In production, this should be set via environment variable
