@@ -4,11 +4,10 @@ import com.challenge.api.dto.CreateEmployeeRequest;
 import com.challenge.api.model.Employee;
 import com.challenge.api.model.EmployeeModel;
 import com.challenge.api.repository.EmployeeRepository;
-import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+import org.springframework.stereotype.Service;
 
 @Service
 public class EmployeeService {

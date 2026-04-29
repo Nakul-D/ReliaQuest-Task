@@ -2,9 +2,8 @@ package com.challenge.api.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import lombok.Data;
-
 import java.time.Instant;
+import lombok.Data;
 
 @Data
 public class CreateEmployeeRequest {
@@ -15,11 +14,9 @@ public class CreateEmployeeRequest {
     @NotBlank
     private String lastName;
 
-    @NotNull
-    private Integer salary;
+    @NotNull private Integer salary;
 
-    @NotNull
-    private Integer age;
+    @NotNull private Integer age;
 
     @NotBlank
     private String jobTitle;
@@ -27,8 +24,7 @@ public class CreateEmployeeRequest {
     @NotBlank
     private String email;
 
-    @NotNull
-    private Instant contractHireDate;
+    @NotNull private Instant contractHireDate;
 
     private Instant contractTerminationDate;
 }

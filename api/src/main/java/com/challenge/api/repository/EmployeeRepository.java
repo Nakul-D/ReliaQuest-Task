@@ -2,10 +2,9 @@ package com.challenge.api.repository;
 
 import com.challenge.api.model.Employee;
 import com.challenge.api.model.EmployeeModel;
-import org.springframework.stereotype.Repository;
-
 import java.time.Instant;
 import java.util.*;
+import org.springframework.stereotype.Repository;
 
 @Repository
 public class EmployeeRepository {

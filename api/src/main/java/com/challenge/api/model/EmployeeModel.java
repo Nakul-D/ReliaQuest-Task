@@ -1,9 +1,8 @@
 package com.challenge.api.model;
 
-import lombok.Data;
-
 import java.time.Instant;
 import java.util.UUID;
+import lombok.Data;
 
 @Data
 public class EmployeeModel implements Employee {

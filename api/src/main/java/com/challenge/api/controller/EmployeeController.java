@@ -2,15 +2,13 @@ package com.challenge.api.controller;
 
 import com.challenge.api.dto.CreateEmployeeRequest;
 import com.challenge.api.model.Employee;
-import java.util.List;
-import java.util.UUID;
-
 import com.challenge.api.service.EmployeeService;
 import jakarta.validation.Valid;
+import java.util.List;
+import java.util.UUID;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-
 
 @RestController
 @RequestMapping("/api/v1/employee")
